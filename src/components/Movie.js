@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Children } from 'react';
 
-const Movie = () => {
+const Movie = ({ name, url, Children }) => {
     return (
         <>
-        <h1> "I am movie"</h1>
+            <p>{ name }</p>
+            <a href={url}>{ url }</a>
         </>
     )
 }

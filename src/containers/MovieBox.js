@@ -27,12 +27,15 @@ const MovieBox = () => {
             name: "Captain Marvel",
             url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
           }
-    ])
+    ]);
 
     return (
         <>
-        <h2>"I am a MovieBox"</h2>
-        <MovieList/>
+        <h2>Upcoming Film Releases for UK</h2>
+        <MovieList movies={movies}/>
+        <a href='https://www.imdb.com/calendar/?region=gb'>
+                <button>View more upcoming releases >></button>
+            </a>
         </>
     )
 }
